@@ -18,7 +18,7 @@ body {
   background-image: url(../img/logo.jpg), url(../img/look-away.png);
   background-attachment : fixed;
   background-repeat: no-repeat;
-  background-size: 20%, 20%;
+  background-size: 18%, 20%;
   background-position-y: 80px, bottom;
   background-position-x: 20px, right;
   margin-bottom: 60px; /* Margin bottom by footer height */
@@ -43,6 +43,7 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+
 .navbar {
   background-color: var(--sgdb-dark-grey);
 }
@@ -51,6 +52,12 @@ body {
   padding-right: 15px;
 }
 .nav-item a {
+  color: var(--sgdb-orange);
+  font-family: 'BioRhyme Expanded', serif;
+  font-size: x-large
+}
+
+.nav-item h1 {
   color: var(--sgdb-orange);
   font-family: 'BioRhyme Expanded', serif;
   font-size: x-large
@@ -65,14 +72,57 @@ body {
 
 section > div > h1 {
   color: var(--sgdb-light-grey);
+  text-align: center;
 }
 
 .band-list {
   margin-top: 100px;
 }
 .band-member {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.band-member > div {
+  padding-left: unset;
+  padding-right: unset;
+}
+.band-member > img {
+  src: url(/img/band/nuno.jpg);
   border-style: solid;
-  border-width: 5px;
-  border-radius: 15px;
+  border-width: 3px;
+  border-radius: 50%;
   border-color: var(--sgdb-light-grey);
+}
+.band-member p {
+  outline: none;
+  text-align: center;
+  font-family: 'BioRhyme Expanded', serif;
+  color: var(--sgdb-orange);
+}
+.band-member:hover {
+  color: transparent;
+  font-size: larger;
+}
+
+.agenda {
+  color: var(--sgdb-orange);
+}
+.agenda dd {
+  padding-left: 5%;
+}
+
+.contacts {
+  color: white;
+}
+.contacts li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.contacts li > img {
+  width: 32px;
+  margin-right: 5px;
+}
+.contacts a {
+  color: white;
 }
