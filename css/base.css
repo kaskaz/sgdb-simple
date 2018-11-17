@@ -75,15 +75,13 @@ section > div > h1 {
   text-align: center;
 }
 
-.band-list {
-  margin-top: 100px;
-}
 .band-member {
   background-color: transparent;
   border: none;
   outline: none;
 }
 .band-member > div {
+  max-height: 100%;
   padding-left: unset;
   padding-right: unset;
 }
